@@ -1,0 +1,33 @@
+:host {
+    .logo-title {
+        display: flex;
+
+        .logo-img {
+            margin: auto;
+            padding: 20px 0;
+        }
+    }
+
+    .table {
+        width: 70%;
+        margin: auto;
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mat-column-id {
+            width: 30%;
+        }
+               
+        tr:nth-child(odd) td {
+            background-color: #f0f3f6;
+        }
+
+        tr:hover td {
+            background-color: #e0e8f0;
+            cursor: pointer;
+        }
+    }
+}
