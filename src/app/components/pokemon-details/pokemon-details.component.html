@@ -1,0 +1,38 @@
+<form [formGroup]="pokemonFormGroup">
+    <mat-dialog-content>
+        @if (isLoading) {
+            <mat-spinner diameter="50" color="primary"></mat-spinner>
+        } @else {
+            <div class="title"> 
+                <h1><b> {{ getFormControl('name').value }} </b></h1>
+                <img class="pokemon-image" [src]="getFormControl('image').value">
+            </div>
+            <div class="content"> 
+                <mat-form-field appearance="fill">
+                    <mat-label>Height</mat-label>
+                    <input matInput formControlName="height" [readonly]="true"/>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Weight</mat-label>
+                    <input matInput formControlName="weight" [readonly]="true"/>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Types</mat-label>
+                    <input matInput formControlName="types" [readonly]="true"/>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Abilities</mat-label>
+                    <input matInput formControlName="abilities" [readonly]="true"/>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Order</mat-label>
+                    <input matInput formControlName="order" [readonly]="true"/>
+                </mat-form-field>
+            </div>
+        }
+    </mat-dialog-content>
+</form>

@@ -1,0 +1,26 @@
+:host {
+    mat-spinner {
+        animation: mat-progress-spinner-keyframes 1.8s linear infinite;
+    }
+
+    mat-dialog-content {
+        display: flex;
+        justify-content: space-around;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .pokemon-image {
+                max-width: 250px;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

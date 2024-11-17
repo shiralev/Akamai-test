@@ -11,5 +11,11 @@ export interface IApiRespons {
 export interface IPokemon {
     name: string;
     url: string;
-    id?: string;
+    id: string;
+    abilities?: string[];
+    height?: number;
+    weight?: number;
+    types?: string[];
+    image?: string;
+    order?: number
 };
